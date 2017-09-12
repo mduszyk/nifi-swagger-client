@@ -94,8 +94,8 @@ public class ProcessorDTO {
   @SerializedName("persistsState")
   private Boolean persistsState = false;
 
-  @SerializedName("restricted")
-  private Boolean restricted = false;
+//  @SerializedName("restricted")
+//  private Boolean restricted = false;
 
   @SerializedName("inputRequirement")
   private String inputRequirement = null;
@@ -350,28 +350,28 @@ public class ProcessorDTO {
     this.persistsState = persistsState;
   }
 
-  public ProcessorDTO restricted(Boolean restricted) {
-    this.restricted = restricted;
-    return this;
-  }
+//  public ProcessorDTO restricted(Boolean restricted) {
+//    this.restricted = restricted;
+//    return this;
+//  }
 
    /**
    * Whether the processor requires elevated privileges.
    * @return restricted
   **/
-  @ApiModelProperty(example = "null", value = "Whether the processor requires elevated privileges.")
-  public Boolean getRestricted() {
-    return restricted;
-  }
-
-  public void setRestricted(Boolean restricted) {
-    this.restricted = restricted;
-  }
-
-  public ProcessorDTO inputRequirement(String inputRequirement) {
-    this.inputRequirement = inputRequirement;
-    return this;
-  }
+//  @ApiModelProperty(example = "null", value = "Whether the processor requires elevated privileges.")
+//  public Boolean getRestricted() {
+//    return restricted;
+//  }
+//
+//  public void setRestricted(Boolean restricted) {
+//    this.restricted = restricted;
+//  }
+//
+//  public ProcessorDTO inputRequirement(String inputRequirement) {
+//    this.inputRequirement = inputRequirement;
+//    return this;
+//  }
 
    /**
    * The input requirement for this processor.
@@ -450,7 +450,7 @@ public class ProcessorDTO {
         Objects.equals(this.supportsEventDriven, processorDTO.supportsEventDriven) &&
         Objects.equals(this.supportsBatching, processorDTO.supportsBatching) &&
         Objects.equals(this.persistsState, processorDTO.persistsState) &&
-        Objects.equals(this.restricted, processorDTO.restricted) &&
+//        Objects.equals(this.restricted, processorDTO.restricted) &&
         Objects.equals(this.inputRequirement, processorDTO.inputRequirement) &&
         Objects.equals(this.config, processorDTO.config) &&
         Objects.equals(this.validationErrors, processorDTO.validationErrors);
@@ -458,7 +458,7 @@ public class ProcessorDTO {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, parentGroupId, position, name, type, state, style, relationships, description, supportsParallelProcessing, supportsEventDriven, supportsBatching, persistsState, restricted, inputRequirement, config, validationErrors);
+    return Objects.hash(id, parentGroupId, position, name, type, state, style, relationships, description, supportsParallelProcessing, supportsEventDriven, supportsBatching, persistsState, inputRequirement, config, validationErrors);
   }
 
 
@@ -480,7 +480,7 @@ public class ProcessorDTO {
     sb.append("    supportsEventDriven: ").append(toIndentedString(supportsEventDriven)).append("\n");
     sb.append("    supportsBatching: ").append(toIndentedString(supportsBatching)).append("\n");
     sb.append("    persistsState: ").append(toIndentedString(persistsState)).append("\n");
-    sb.append("    restricted: ").append(toIndentedString(restricted)).append("\n");
+//    sb.append("    restricted: ").append(toIndentedString(restricted)).append("\n");
     sb.append("    inputRequirement: ").append(toIndentedString(inputRequirement)).append("\n");
     sb.append("    config: ").append(toIndentedString(config)).append("\n");
     sb.append("    validationErrors: ").append(toIndentedString(validationErrors)).append("\n");
