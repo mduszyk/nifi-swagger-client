@@ -18,6 +18,8 @@ import com.google.gson.annotations.SerializedName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
+import javax.xml.bind.annotation.XmlType;
+
 /**
  * ConnectableDTO
  */
@@ -29,6 +31,8 @@ public class ConnectableDTO {
   /**
    * The type of component the connectable is.
    */
+
+  @XmlType(name = "connectableType")
   public enum TypeEnum {
     @SerializedName("PROCESSOR")
     PROCESSOR("PROCESSOR"),

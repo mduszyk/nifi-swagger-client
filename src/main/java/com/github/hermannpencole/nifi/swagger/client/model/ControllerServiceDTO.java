@@ -13,16 +13,13 @@
 
 package com.github.hermannpencole.nifi.swagger.client.model;
 
-import java.util.Objects;
-
 import com.github.hermannpencole.nifi.swagger.MapTypeAdapterFactory;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import io.swagger.annotations.ApiModelProperty;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+import javax.xml.bind.annotation.XmlType;
+import java.util.*;
 
 /**
  * ControllerServiceDTO
@@ -50,6 +47,8 @@ public class ControllerServiceDTO {
   /**
    * The state of the controller service.
    */
+
+  @XmlType(name = "controllerServiceState")
   public enum StateEnum {
     @SerializedName("ENABLED")
     ENABLED("ENABLED"),

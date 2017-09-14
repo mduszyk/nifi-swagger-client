@@ -13,17 +13,11 @@
 
 package com.github.hermannpencole.nifi.swagger.client.model;
 
-import java.util.Objects;
-import com.github.hermannpencole.nifi.swagger.client.model.PositionDTO;
-import com.github.hermannpencole.nifi.swagger.client.model.ProcessorConfigDTO;
-import com.github.hermannpencole.nifi.swagger.client.model.RelationshipDTO;
 import com.google.gson.annotations.SerializedName;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+import javax.xml.bind.annotation.XmlType;
+import java.util.*;
 
 /**
  * ProcessorDTO
@@ -48,6 +42,7 @@ public class ProcessorDTO {
   /**
    * The state of the processor
    */
+  @XmlType(name = "processorState")
   public enum StateEnum {
     @SerializedName("RUNNING")
     RUNNING("RUNNING"),

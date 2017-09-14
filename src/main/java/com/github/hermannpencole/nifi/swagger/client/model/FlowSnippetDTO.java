@@ -13,20 +13,12 @@
 
 package com.github.hermannpencole.nifi.swagger.client.model;
 
-import java.util.Objects;
-import com.github.hermannpencole.nifi.swagger.client.model.ConnectionDTO;
-import com.github.hermannpencole.nifi.swagger.client.model.ControllerServiceDTO;
-import com.github.hermannpencole.nifi.swagger.client.model.FunnelDTO;
-import com.github.hermannpencole.nifi.swagger.client.model.LabelDTO;
-import com.github.hermannpencole.nifi.swagger.client.model.PortDTO;
-import com.github.hermannpencole.nifi.swagger.client.model.ProcessGroupDTO;
-import com.github.hermannpencole.nifi.swagger.client.model.ProcessorDTO;
-import com.github.hermannpencole.nifi.swagger.client.model.RemoteProcessGroupDTO;
 import com.google.gson.annotations.SerializedName;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * FlowSnippetDTO

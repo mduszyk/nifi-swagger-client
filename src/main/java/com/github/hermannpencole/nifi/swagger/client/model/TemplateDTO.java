@@ -27,6 +27,7 @@ import javax.xml.bind.annotation.*;
  * TemplateDTO
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-06-09T12:21:23.789+02:00")
+@XmlRootElement(name = "template")
 public class TemplateDTO {
   @SerializedName("uri")
   private String uri = null;
